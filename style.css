@@ -26,7 +26,6 @@ body{
   background-position: center;
   background-size: cover;
   */
-    height: 100vh;
     background: var(--bg-url) no-repeat top center/cover;
 }
 body * {
@@ -94,18 +93,19 @@ ul{
   gap: 16px;
 }
 ul li a{
-  background-color: var(--surface-color);
+  background: var(--surface-color);
   display: flex;
   justify-content: center;
   padding: 16px;
   border: 2px solid var(--stroke-color);
   border-radius: 20px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 ul li a:hover{
-  background-color: rgba(255, 255, 255, 0.05);
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
 }
 
 #social{
